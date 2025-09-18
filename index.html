@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Agency</title>
+    <style>
+        /* Базовые стили */
+        body {
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            background: #f0f0f5;
+            color: #333;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Шапка */
+        .header {
+            background: #0d1b2a;
+            color: #fff;
+            padding: 20px 40px;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #ffcc00;
+        }
+
+        .menu-list {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            margin: 10px 0 0;
+            padding: 0;
+        }
+
+        .menu-list a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .menu-list a:hover {
+            color: #ffcc00;
+        }
+
+        /* Hero блок */
+        .hero {
+            background: linear-gradient(to right, #14213d, #0d1b2a);
+            color: #fff;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #ffcc00;
+            color: #000;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #ffaa00;
+        }
+
+        /* Секция "услуги" */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 50px 20px;
+        }
+
+        .service-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card h3 {
+            margin-bottom: 15px;
+            color: #14213d;
+        }
+
+        /* Подвал */
+        .footer {
+            background: #0d1b2a;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+        }
+
+        .social {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 10px 0 0;
+            padding: 0;
+        }
+
+        .social a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .social a:hover {
+            color: #ffaa00;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Шапка -->
+        <header class="header">
+            <div class="logo">Creative Agency</div>
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Hero -->
+        <section class="hero">
+            <h1>Мы создаем креативные проекты</h1>
+            <p>Воплощаем идеи в жизнь: брендинг, дизайн, видео и маркетинг.</p>
+            <a href="#" class="btn">Связаться с нами</a>
+        </section>
+
+        <!-- Услуги -->
+        <section class="services">
+            <div class="service-card">
+                <h3>Брендинг</h3>
+                <p>Создаем фирменный стиль, который выделяет вас среди конкурентов.</p>
+            </div>
+            <div class="service-card">
+                <h3>Веб-дизайн</h3>
+                <p>Разрабатываем современные сайты и лендинги под любые задачи.</p>
+            </div>
+            <div class="service-card">
+                <h3>Видео-продакшн</h3>
+                <p>Снимаем креативные ролики для рекламы и продвижения.</p>
+            </div>
+        </section>
+
+        <!-- Подвал -->
+        <footer class="footer">
+            <p>© 2025 Creative Agency</p>
+            <ul class="social">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>
