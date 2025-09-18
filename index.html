@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creative Agency</title>
+    <title>Quiz Box — Эвент агентство</title>
     <style>
         /* Базовые стили */
         body {
             margin: 0;
             font-family: "Segoe UI", sans-serif;
-            background: #f0f0f5;
+            background: #fafafa;
             color: #333;
         }
 
@@ -22,22 +22,25 @@
 
         /* Шапка */
         .header {
-            background: #0d1b2a;
+            background: #4a148c;
             color: #fff;
             padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
 
         .logo {
             font-size: 22px;
             font-weight: bold;
-            color: #ffcc00;
+            color: #ffeb3b;
         }
 
         .menu-list {
             list-style: none;
             display: flex;
             gap: 25px;
-            margin: 10px 0 0;
+            margin: 0;
             padding: 0;
         }
 
@@ -49,12 +52,12 @@
         }
 
         .menu-list a:hover {
-            color: #ffcc00;
+            color: #ffeb3b;
         }
 
-        /* Hero блок */
+        /* Hero */
         .hero {
-            background: linear-gradient(to right, #14213d, #0d1b2a);
+            background: linear-gradient(135deg, #7b1fa2, #4a148c);
             color: #fff;
             text-align: center;
             padding: 80px 20px;
@@ -73,7 +76,7 @@
         .btn {
             display: inline-block;
             padding: 12px 24px;
-            background: #ffcc00;
+            background: #ffeb3b;
             color: #000;
             font-weight: bold;
             text-decoration: none;
@@ -82,38 +85,38 @@
         }
 
         .btn:hover {
-            background: #ffaa00;
+            background: #fdd835;
         }
 
-        /* Секция "услуги" */
-        .services {
+        /* Секция мероприятий */
+        .events {
+            padding: 50px 20px;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
-            padding: 50px 20px;
         }
 
-        .service-card {
+        .event-card {
             background: #fff;
             border-radius: 12px;
-            padding: 30px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 25px;
             text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
         }
 
-        .service-card:hover {
+        .event-card:hover {
             transform: translateY(-5px);
         }
 
-        .service-card h3 {
-            margin-bottom: 15px;
-            color: #14213d;
+        .event-card h3 {
+            margin-bottom: 10px;
+            color: #4a148c;
         }
 
         /* Подвал */
         .footer {
-            background: #0d1b2a;
+            background: #4a148c;
             color: #fff;
             text-align: center;
             padding: 20px;
@@ -130,14 +133,14 @@
         }
 
         .social a {
-            color: #ffcc00;
+            color: #ffeb3b;
             text-decoration: none;
             font-size: 16px;
             transition: 0.3s;
         }
 
         .social a:hover {
-            color: #ffaa00;
+            color: #fff176;
         }
     </style>
 </head>
@@ -146,12 +149,12 @@
     <div class="wrapper">
         <!-- Шапка -->
         <header class="header">
-            <div class="logo">Creative Agency</div>
+            <div class="logo">Quiz Box</div>
             <nav class="menu">
                 <ul class="menu-list">
                     <li><a href="#">Главная</a></li>
                     <li><a href="#">О нас</a></li>
-                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Мероприятия</a></li>
                     <li><a href="#">Контакты</a></li>
                 </ul>
             </nav>
@@ -159,34 +162,34 @@
 
         <!-- Hero -->
         <section class="hero">
-            <h1>Мы создаем креативные проекты</h1>
-            <p>Воплощаем идеи в жизнь: брендинг, дизайн, видео и маркетинг.</p>
-            <a href="#" class="btn">Связаться с нами</a>
+            <h1>Организация квизов и событий</h1>
+            <p>Мы делаем ваши вечера яркими и незабываемыми!</p>
+            <a href="#" class="btn">Забронировать квиз</a>
         </section>
 
-        <!-- Услуги -->
-        <section class="services">
-            <div class="service-card">
-                <h3>Брендинг</h3>
-                <p>Создаем фирменный стиль, который выделяет вас среди конкурентов.</p>
+        <!-- Мероприятия -->
+        <section class="events">
+            <div class="event-card">
+                <h3>Квиз-вечеринка</h3>
+                <p>Веселые викторины для компаний и друзей.</p>
             </div>
-            <div class="service-card">
-                <h3>Веб-дизайн</h3>
-                <p>Разрабатываем современные сайты и лендинги под любые задачи.</p>
+            <div class="event-card">
+                <h3>Корпоратив</h3>
+                <p>Проведение тимбилдингов и корпоративных игр.</p>
             </div>
-            <div class="service-card">
-                <h3>Видео-продакшн</h3>
-                <p>Снимаем креативные ролики для рекламы и продвижения.</p>
+            <div class="event-card">
+                <h3>Специальные события</h3>
+                <p>Уникальные тематические вечера с призами.</p>
             </div>
         </section>
 
         <!-- Подвал -->
         <footer class="footer">
-            <p>© 2025 Creative Agency</p>
+            <p>© 2025 Quiz Box</p>
             <ul class="social">
                 <li><a href="#">Facebook</a></li>
                 <li><a href="#">Instagram</a></li>
-                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Telegram</a></li>
             </ul>
         </footer>
     </div>
